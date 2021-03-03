@@ -59,7 +59,7 @@ class FilterObject extends Component{
                 
                 <button className = 'confirmationButton' onClick={ () => this.filterEmployees(this.state.userInput) } > Filter </button>
 
-                <span className='resultsBox filterObjectRB'> Filtered: { JSON.stringify(this.state.filteredEmployees),null,10 }</span>
+                <span className='resultsBox filterObjectRB'> Filtered: { JSON.stringify(this.state.filteredEmployees, null, 10) }</span>
 
 
             </div>

@@ -23,14 +23,15 @@ class FilterString extends Component{
         let names = this.state.names;
         let filteredNames = []
 
-        for (let i = 0; i < names.length; i++){
-            if ( names[i].includes(userInput) ){
-                filteredNames.push(names[i]);
-            }
+            for (let i = 0; i < names.length; i++){
+                if ( names[i].includes(userInput) ) {
+                    filteredNames.push(names[i]);
+                  }
         }
         this.setState({ filteredNames: filteredNames})
-
     }
+
+
 
 
 
